@@ -20,7 +20,7 @@ export class Login extends React.Component {
           <input type="hidden" value="0" name="blocklogin"/>
           <input type="hidden" value="1" name="wager"/>
           <input type="hidden" value="75c1c409d022d057054b07e99e0a5690" name="tmsid"/>
-          <input id="header_edit-redirect" type="hidden" value="https://www.twinspires.com/raf-test" name="redirect"/>
+          <input id="header_edit-redirect" type="hidden" value="https://www.twinspires.com/raf-email-test" name="redirect"/>
 
           <input onChange={this._onChangeLogin} styleName='input' type='text' name='acct' maxLength='100' placeholder='Username' />
           <input onChange={this._onChangePassword} styleName='input' name='pin' maxLength='16' type='password' placeholder='Password' />

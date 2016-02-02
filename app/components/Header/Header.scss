@@ -1,28 +1,145 @@
-.Header,
-.Header-bold {
-  font-size: 18px;
-  text-align: center;
-  line-height: 25px;
+.header {
+  background: #fff;
+  padding: 0 10px;
+  margin-top: 25px;
 }
 
-.Header {
-  padding: 25px 150px 5px 150px;
+.logo,
+.login {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle
 }
 
-.Header-bold {
-  font-weight: 600;
+.logo {
+  text-align: left;
 }
 
+.login {
+  text-align: right;
+}
 
+.logo-desktop {
+  display: inline-block;
+}
 
-@media screen and (max-width: 768px) {
-  .Header {
-    padding: 25px 30px 5px 30px;
+.logo-tablet {
+  display: none;
+  height: 33px;
+}
+
+.account,
+.deposit,
+.welcome,
+.logout {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+.account,
+.welcome {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.logout a {
+  color: #2e85ca;
+  text-decoration: none;
+}
+
+.deposit {
+  background: #0b89ef;
+  background: -webkit-linear-gradient(top, #0b89ef 0%,#0054ab 100%);
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+
+  & > a {
+    padding: 0px 12px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+
+  &:hover {
+    background: #1775c1;
+    background: -webkit-linear-gradient(top, #1775c1 0%,#0f407a 100%);
+    background: linear-gradient(to bottom, #1775c1 0%,#0f407a 100%);
   }
 }
 
-@media screen and (max-width: 480px) {
-  .Header {
-    padding: 25px 15px 5px 15px;
+.logo-link {
+  vertical-align: top;
+}
+
+.username {
+  color: #fa753e;
+}
+
+.logout-mobile {
+  padding-top: 7px;
+  display: none;
+}
+
+.logout-mobile a {
+  color: #2e85ca;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 845px) {
+  .welcome,
+  .logout {
+    display: block;
+  }
+
+  .welcome {
+    margin-right: 0;
+  }
+
+  .logout {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    padding: 0 5px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .login {
+    width: 60%;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-tablet {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .account {
+    display: none;
+  }
+
+  .logo {
+    vertical-align: top;
+  }
+
+  .logout-mobile {
+    display: block;
   }
 }
